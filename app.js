@@ -34,11 +34,11 @@ const productInput = document.getElementById("product");
 let product = productInput.value;
 
 function displayList(container="shoppingList", list){
-    for(let i=0; i< listItems.length; i++)
+    for(let i=0; i< list.length; i++)
         {
             let listItem=document.createElement("li");
-            listItem.innerText=listItems[i];
-            shoppingList.appendChild(listItem);
+            listItem.innerText=list[i];
+            container.appendChild(listItem);
         }
 }
 displayList(shoppingList,listItems);
@@ -54,8 +54,13 @@ function addProduct(container,list, item){
 addProductButton.addEventListener("click", function(){
     const productInput = document.getElementById("product");
     let product = productInput.value;
+    if(!product.trim() ){
+        alert("Attenzione! Campo vuoto oppure errato")
+    }else{
+        addProduct(shoppingList,listItems,product);
+        productInput.value="";
+    }
     //console.log(product)
-    addProduct(shoppingList,listItems,product);
 });
 
 
