@@ -1,6 +1,6 @@
 const lampOn = document.getElementById("lamp_on");
 const lampOff = document.getElementById("lamp_off");
-const lightLamp =  document.getElementById("button");
+const lightLamp =  document.getElementById("light-lamp");
 
 function changeLampStatus(){
     if(lightLamp.classList.contains("off")){
@@ -16,7 +16,6 @@ function changeLampStatus(){
         lightLamp.classList.remove("on");
         lightLamp.innerText="Accendi";
     }
-    
 }
 
 lightLamp.addEventListener('click', changeLampStatus);
