@@ -1,0 +1,8 @@
+.hidden{
+    display: none;
+}
+
+.div{
+    display: flex;
+    align-items: center;
+}
