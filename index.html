@@ -7,12 +7,19 @@
     <title>Esercizio Javascript Dom</title>
 </head>
 <body>
-    <div class="div">
+    <div class="flex-container">
         <img src="./img/white_lamp.png" class="lamp" id="lamp_off" alt="lamp_off">
         <img src="./img/yellow_lamp.png" class="lamp hidden" id="lamp_on" alt="lamp_on">
         <button class="btn off" id="light-lamp">Accendi</button>
     </div>
-    <script src="./app.js"></script>
     
+    <div class="flex-container">
+        <ul id="shopping_list"></ul>
+        <input type="text" name="product" id="product" placeholder="Inserisci un prodotto"/>
+        <button id="add_product">Aggiungi</button>
+    </div> 
+    
+    
+    <script src="./app.js"></script>
 </body>
 </html>

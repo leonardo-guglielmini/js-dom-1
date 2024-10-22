@@ -2,7 +2,7 @@
     display: none;
 }
 
-.div{
+.flex-container{
     display: flex;
     align-items: center;
 }
